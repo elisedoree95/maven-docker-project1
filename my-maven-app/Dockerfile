@@ -1,5 +1,5 @@
 FROM openjdk:8
-ADD target/my-maven-app.jar my-maven-app.jar
-RUN echo "This is a docker Build Step" > out.txt
-ENTRYPOINT ["java", "-jar","my-maven-app.jar"]
+ADD target/my-maven-docker-project.jar my-maven-docker-project.jar
+RUN echo "This is a docker Build Jenkins Step" > out.txt
+ENTRYPOINT ["java", "-jar","my-maven-docker-project.jar"]
 EXPOSE 8080
